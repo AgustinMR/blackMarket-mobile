@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pages/producto.vue" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/app.vue" afterPath="$PROJECT_DIR$/src/app.vue" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/src/pages/inicio.vue" afterPath="$PROJECT_DIR$/src/pages/inicio.vue" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" afterPath="$PROJECT_DIR$/src/routes.js" />
+      <change beforePath="$PROJECT_DIR$/src/pages/producto.vue" afterPath="$PROJECT_DIR$/src/pages/producto.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,8 +49,8 @@
       <file leaf-file-name="producto.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/producto.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="372">
+              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -79,8 +74,8 @@
         <option value="$PROJECT_DIR$/src/app.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
-        <option value="$PROJECT_DIR$/src/pages/producto.vue" />
         <option value="$PROJECT_DIR$/src/pages/inicio.vue" />
+        <option value="$PROJECT_DIR$/src/pages/producto.vue" />
       </list>
     </option>
   </component>
@@ -222,12 +217,12 @@
       <workItem from="1512838859500" duration="4405000" />
       <workItem from="1512857627113" duration="5123000" />
       <workItem from="1512862792129" duration="773000" />
-      <workItem from="1512856363974" duration="3992000" />
+      <workItem from="1512856363974" duration="5139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35456000" />
+    <option name="totallyTimeSpent" value="36603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1382" height="1040" extended-state="0" />
@@ -586,8 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/producto.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="372">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
