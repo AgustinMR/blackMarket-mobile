@@ -1,5 +1,5 @@
 <template>
-    <f7-page name="inicio">
+    <f7-page main="true" name="inicio">
         <f7-navbar class="theme-black" sliding>
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -53,14 +53,17 @@
         </f7-popover>
         <div class="ui relaxed divided items" style="margin-top: 60px">
             <template v-for="producto in productos">
-                <div class="ui link item hover-bm-f1" style="cursor: pointer; padding: 20px">
-                    <h2 class="ui header text-bm-red" style="font-weight: 500; margin: 0; padding: 0">
+                <f7-list-item
+                        :href="'/productos/'+producto.id"
+                        class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
+                        style="cursor: pointer; padding: 20px">
+                    <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 0; color: inherit">
                         {{producto.nombre}}
                         <h4 class="ui header" style="margin-top: 5px"><i
                                 class="user outline circle icon grey"></i>{{producto.empresa}}
                         </h4>
                     </h2>
-                </div>
+                </f7-list-item>
             </template>
         </div>
         <infinite-loading ref="infiniteLoading"

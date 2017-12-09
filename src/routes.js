@@ -7,4 +7,8 @@ export default [
         path: '/inicio/',
         component: 'inicio-page'
     },
+    {
+        path: '/productos/:id',
+        component: 'productos-page'
+    },
 ]
