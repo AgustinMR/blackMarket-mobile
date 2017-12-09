@@ -15,4 +15,8 @@ export default [
         path: '/home/',
         component: require('./pages/home.vue')
     },
+    {
+        path: '/registrarse/',
+        component: require('./pages/registrarse.vue')
+    },
 ]

@@ -10,6 +10,8 @@
                         </div>
                         <div class="ui center aligned text container">
                             <h2 class="ui header text-bm-red">Iniciar Sesi&oacute;n</h2>
+                            <button class="ui icon facebook circular button"><i class="facebook f large icon"></i>
+                            </button>
                         </div>
                         <div class="ui text container" style="padding: 20px; margin: 0">
                             <f7-list form>
@@ -26,7 +28,7 @@
                         </div>
                         <div class="ui center aligned text container">
                             <h3 class="ui header text-bm-red">&iquest;No tienes cuenta?</h3>
-                            <f7-button>Registrarse</f7-button>
+                            <f7-button href="/registrarse/">Registrarse</f7-button>
                         </div>
                     </f7-page>
                 </f7-pages>
@@ -39,9 +41,6 @@
     export default {
         data() {
             return {
-                username: '',
-                password: '',
-                email: '',
                 usernameLogin: '',
                 passwordLogin: ''
             }
