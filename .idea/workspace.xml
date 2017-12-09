@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/src/pages/inicio.vue" afterPath="$PROJECT_DIR$/src/pages/inicio.vue" />
+      <change beforePath="$PROJECT_DIR$/src/pages/producto.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" afterPath="$PROJECT_DIR$/src/routes.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,50 +19,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="inicio.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+            <state relative-caret-position="632">
+              <caret line="83" column="66" lean-forward="false" selection-start-line="83" selection-start-column="66" selection-end-line="83" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registrarse.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-              <folding>
                 <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-list-item#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-list-item#1;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-list-item#2;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,10 +48,11 @@
         <option value="$PROJECT_DIR$/src/pages/home.vue" />
         <option value="$PROJECT_DIR$/src/pages/registrarse.vue" />
         <option value="$PROJECT_DIR$/src/store.js" />
-        <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/app.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/pages/producto.vue" />
+        <option value="$PROJECT_DIR$/src/routes.js" />
         <option value="$PROJECT_DIR$/src/pages/inicio.vue" />
       </list>
     </option>
@@ -151,12 +122,6 @@
             <path>
               <item name="blackMarket-mobile" type="b2602c69:ProjectViewProjectNode" />
               <item name="blackMarket-mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blackMarket-mobile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blackMarket-mobile" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -222,24 +187,25 @@
       <workItem from="1512821885447" duration="10077000" />
       <workItem from="1512847295259" duration="2351000" />
       <workItem from="1512838859500" duration="4405000" />
-      <workItem from="1512857627113" duration="1402000" />
+      <workItem from="1512857627113" duration="5123000" />
+      <workItem from="1512862792129" duration="773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26970000" />
+    <option name="totallyTimeSpent" value="31464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1382" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108630955" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11453745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11453745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -264,6 +230,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3978">
@@ -276,7 +258,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -284,13 +268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#1;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#2;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -301,6 +278,11 @@
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -317,7 +299,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -325,13 +309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#1;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#2;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -342,6 +319,11 @@
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -358,7 +340,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -366,13 +350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#1;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#2;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -383,6 +360,11 @@
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -392,7 +374,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -430,60 +414,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/home.vue" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home.vue" />
-    <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
+    <entry file="file://$PROJECT_DIR$/src/pages/producto.vue" />
+    <entry file="file://$PROJECT_DIR$/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#1;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-list-item#2;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="23" />
+        <state relative-caret-position="322">
+          <caret line="119" column="29" lean-forward="false" selection-start-line="119" selection-start-column="23" selection-end-line="119" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="632">
+          <caret line="83" column="66" lean-forward="false" selection-start-line="83" selection-start-column="66" selection-end-line="83" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
