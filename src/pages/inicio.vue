@@ -45,17 +45,37 @@
                 </f7-list>
             </f7-list>
         </f7-popover>
-        <f7-list
-                class="searchbar-found"
-                style="padding-bottom: 16px"
-                media-list
-                virtual
-                :virtual-items="productos"
-        >
-            <t7-template>
-                <f7-list-button media-item :title="'{{nombre}}'"></f7-list-button>
-            </t7-template>
-        </f7-list>
+        <div v-bar style="margin-top: 20px">
+            <div style="max-height: 100%">
+                <f7-list
+                        id="search-list"
+                        class="searchbar-found"
+                        media-list
+                        virtual
+                        :virtual-items="productos"
+                >
+                    <t7-template>
+                        <f7-list-item media-item link="#" :title="'{{nombre}}'"
+                                      :subtitle="'{{empresa}}' "></f7-list-item>
+                    </t7-template>
+                </f7-list>
+                <f7-list>
+                    <infinite-loading ref="infiniteLoading"
+                                      @infinite="listarProductos">
+                        <div slot="no-more">
+                            <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
+                                    class="search icon text-bm-red"></i>No hay m&aacute;s resultados.
+                            </h3>
+                        </div>
+                        <div slot="no-results">
+                            <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
+                                    class="search icon text-bm-red"></i>No hay resultados que mostrar.
+                            </h3>
+                        </div>
+                    </infinite-loading>
+                </f7-list>
+            </div>
+        </div>
     </f7-page>
 </template>
 <script>
@@ -68,7 +88,7 @@
                 categoria: '',
                 precioMin: 0,
                 precioMax: 0,
-                pagina: '',
+                pagina: 1,
                 productos: [],
                 categorias: []
             }
@@ -80,8 +100,11 @@
             getAllCategoriasURL() {
                 return this.$store.state.baseUrl + "tiposproductos/all";
             },
-            listarProductos() {
-
+            listarProductosURL() {
+                return this.$store.state.baseUrl + "productos?precioMin=" + this.precioMin + "&precioMax=" + this.precioMax + "&nombre=" + this.filtro + "&categoria=" + this.categoria + "&pagina=" + this.pagina;
+            },
+            getNombreEmpresaURL() {
+                return this.$store.state.baseUrl + "empresas/";
             }
         },
         methods: {
@@ -92,6 +115,34 @@
                 }).fail(function () {
                     _this.getAllCategorias();
                 });
+            },
+            listarProductos($state) {
+                var _this = this;
+                setTimeout(() => {
+                    $.get(_this.listarProductosURL, function (response) {
+                        if (response !== undefined) {
+                            if (response.length >= 1) {
+                                $.each(response, function (index, producto) {
+                                    $.get(_this.getNombreEmpresaURL + producto.empresa + "?fields=nombre", function (response2) {
+                                        _this.productos.push({
+                                            id: producto.id,
+                                            nombre: producto.nombre || 'Desconocido...',
+                                            empresa: response2.nombre || 'Desconocido...',
+                                            precio: producto.precio || 0,
+                                        });
+                                    });
+                                });
+                                $state.loaded();
+                                _this.pagina += 1;
+                            } else $state.complete();
+                        } else $state.complete();
+                    });
+                }, 1000);
+            },
+            resetProductos() {
+                this.pagina = 1;
+                this.productos = [];
+                this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
             }
         },
         components: {

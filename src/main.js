@@ -11,7 +11,9 @@ import App from './app';
 import {store} from './store';
 import VueCookie from 'vue-cookie';
 import Inicio from './pages/inicio';
+import Vuebar from 'vuebar';
 
+Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
 Vue.use(VueCookie);
 Vue.use(Framework7Vue);
