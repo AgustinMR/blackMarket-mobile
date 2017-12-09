@@ -9,7 +9,9 @@ import './assets/semantic.min';
 import Routes from './routes.js';
 import App from './app';
 import {store} from './store';
+import VueCookie from 'vue-cookie';
 
+Vue.use(VueCookie);
 Vue.use(Framework7Vue);
 new Vue({
     el: '#app',
