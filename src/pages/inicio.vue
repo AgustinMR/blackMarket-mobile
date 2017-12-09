@@ -10,7 +10,8 @@
             <f7-link href="/inicio/">
                 <i class="home icon big" style="padding: 0; margin-top: 0"></i>
             </f7-link>
-            <f7-link><i class="in cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+            <f7-link><i class="cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+            <f7-link><i class="shipping icon big" style="padding: 0; margin-top: 0"></i></f7-link>
             <f7-link @click="logout"><i class="sign out icon big" style="padding: 0; margin-top: 0"></i></f7-link>
         </f7-toolbar>
         <f7-popover id="popover">
@@ -75,13 +76,6 @@
                 </h3>
             </div>
         </infinite-loading>
-        <!--      <f7-popup :opened="verProducto" tablet-fullscreen>
-                  <f7-navbar style="background-color: #b24e3a" sliding>
-                      <f7-nav-left back-link="Volver" close-popup="true"></f7-nav-left>
-                      <f7-nav-center>{{producto.nombre || 'Producto desconocido...'}}</f7-nav-center>
-                  </f7-navbar>
-                  adda
-              </f7-popup>-->
     </f7-page>
 </template>
 <script>
