@@ -33,11 +33,19 @@
                     <f7-input v-model="precioMax" @keyup.enter="resetProductos" type="number"/>
                 </f7-list-item>
                 <f7-block-title style="margin-top: 0" class="text-bm-red">Filtrar por categor&iacute;a</f7-block-title>
-                <div class="ui selection list">
+                <div class="ui selection secondary link list">
+                    <div class="ui link item hover-bm-f1"
+                         :class="{'bm-f1 text-bm-red': categoria === '', 'hover-bm-f1 text-bm-black hover-text-bm-red': '' !== categoria}"
+                         @click="categoria = ''; resetProductos();">
+                        <h4 class="ui header"
+                            style="font-weight: 500; padding: 7px; color: inherit">Todos</h4>
+                    </div>
                     <template v-for="cat in categorias">
-                        <div class="ui link item hover-bm-e8" @click="categoria = cat.nombre; resetProductos();">
-                            <h4 class="ui header text-bm-black hover-text-bm-red"
-                                style="font-weight: 500; padding: 7px">{{cat.nombre}}</h4>
+                        <div class="ui item hover-bm-e8"
+                             :class="{'bm-f1 text-bm-red': categoria === cat.nombre, 'hover-bm-f1 text-bm-black hover-text-bm-red': cat.nombre !== categoria}"
+                             @click="categoria = cat.nombre; resetProductos();">
+                            <h4 class="ui header"
+                                style="font-weight: 500; padding: 7px; color:inherit">{{cat.nombre}}</h4>
                         </div>
                     </template>
                 </div>
