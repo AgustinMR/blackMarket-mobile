@@ -6,6 +6,19 @@
             <h3 class="ui header">
                 <i class="user circle outline grey icon"></i>{{empresa}}
             </h3>
+            <h3 class="ui header">
+                <i class="tag grey icon"></i>{{tipo}}
+            </h3>
+            <h3 class="ui header">
+                <i class="dollar grey icon"></i>{{precio}}
+            </h3>
+            <h3 class="ui header">
+                <i class="barcode grey icon"></i>{{codigo}}
+            </h3>
+            <h3 class="ui header">
+                <i :class="{'checkmark grey icon': precio > 0, 'warning orange icon': precio === 0}"></i>Stock:
+                {{stock}}
+            </h3>
         </div>
     </f7-page>
 </template>
@@ -21,7 +34,7 @@
         },
         props: ['id', 'nombre', 'empresa'],
         mounted() {
-
+            this.obtenerProducto();
         },
         computed: {
             obtenerProductoURL() {
@@ -30,10 +43,15 @@
         },
         methods: {
             obtenerProducto() {
-                if (this.id !== undefined && this.id !== '' && this.id !== null) {
+                if (this.id !== undefined && this.id !== '' && this.id != null) {
                     var _this = this;
                     $.get(this.obtenerProductoURL, function (response) {
-
+                        if (response !== undefined) {
+                            _this.precio = response.precio || 0;
+                            _this.tipo = response.tipoProducto || 'Desconocido...';
+                            _this.codigo = response.codigoDeBarra || '';
+                            _this.stock = response.stock || 'Desconocido...';
+                        }
                     });
                 }
             }
