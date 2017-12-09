@@ -1,7 +1,11 @@
 <template>
     <f7-page class="theme-black">
         <f7-navbar style="background-color: #b24e3a" :title="nombre || 'Producto desconocido...'"
-                   back-link="Volver"></f7-navbar>
+                   back-link="Volver">
+        </f7-navbar>
+        <f7-fab color="black" @click="agregarAlCarrito">
+            <i class="add to cart icon large"></i>
+        </f7-fab>
         <div class="ui left aligned basic segment" style="margin-top: 60px; padding: 20px">
             <h3 class="ui header">
                 <i class="user circle outline grey icon"></i>{{empresa}}
@@ -63,7 +67,9 @@
                     precio: this.precio || 0,
                     cantidad: 1
                 };
-                this.$store.commit('agregarProducto');
+                this.$store.commit('agregarProducto', producto);
+                this.$cookie.set('carrito', this.$store.state.productos);
+
             }
         }
     }

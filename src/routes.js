@@ -11,4 +11,8 @@ export default [
         path: '/productos/:id/:nombre/:empresa',
         component: 'productos-page'
     },
+    {
+        path: '/carrito/',
+        component: 'carrito-page'
+    },
 ]
