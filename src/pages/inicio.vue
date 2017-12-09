@@ -1,5 +1,5 @@
 <template>
-    <f7-page main="true" name="inicio">
+    <f7-page class="hide-bars-on-scroll" main="true" name="inicio">
         <f7-navbar class="theme-black" sliding>
             <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
@@ -52,18 +52,17 @@
             </f7-list>
         </f7-popover>
         <div class="ui relaxed divided items" style="margin-top: 60px">
-            <template v-for="producto in productos">
-                <f7-list-item
-                        :href="'/productos/'+producto.id"
-                        class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
-                        style="cursor: pointer; padding: 20px">
+            <template v-for="prod in productos">
+                <div @click="producto.id = prod.id; producto.nombre = prod.nombre; producto.empresa = prod.empresa; verProducto = true"
+                     class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
+                     style="cursor: pointer; padding: 20px">
                     <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 0; color: inherit">
-                        {{producto.nombre}}
+                        {{prod.nombre}}
                         <h4 class="ui header" style="margin-top: 5px"><i
-                                class="user outline circle icon grey"></i>{{producto.empresa}}
+                                class="user outline circle icon grey"></i>{{prod.empresa}}
                         </h4>
                     </h2>
-                </f7-list-item>
+                </div>
             </template>
         </div>
         <infinite-loading ref="infiniteLoading"
@@ -80,6 +79,13 @@
                 </h3>
             </div>
         </infinite-loading>
+        <f7-popup :opened="verProducto" tablet-fullscreen>
+            <f7-navbar style="background-color: #b24e3a" sliding>
+                <f7-nav-left back-link="Volver" close-popup="true"></f7-nav-left>
+                <f7-nav-center>{{producto.nombre || 'Producto desconocido...'}}</f7-nav-center>
+            </f7-navbar>
+            adda
+        </f7-popup>
     </f7-page>
 </template>
 <script>
@@ -94,7 +100,13 @@
                 precioMax: 0,
                 pagina: 1,
                 productos: [],
-                categorias: []
+                categorias: [],
+                verProducto: false,
+                producto: {
+                    id: '',
+                    nombre: '',
+                    empresa: ''
+                }
             }
         },
         mounted() {
