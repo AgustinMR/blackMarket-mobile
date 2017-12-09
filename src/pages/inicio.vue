@@ -1,6 +1,6 @@
 <template>
-    <f7-page>
-sad
+    <f7-page name="inicio">
+        sdkfjb
     </f7-page>
 </template>
 <script>

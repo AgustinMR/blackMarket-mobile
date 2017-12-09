@@ -4,7 +4,7 @@
         <f7-views>
             <f7-view main>
                 <f7-pages>
-                    <f7-page class="theme-black">
+                    <f7-page v-if="!autenticado" class="theme-black">
                         <div class="ui center aligned text container" style="margin: 0; padding: 20px">
                             <img src="../src/assets/blackMarket.gif" style="height: 80px">
                         </div>
@@ -31,6 +31,7 @@
                             <f7-button href="/registrarse/">Registrarse</f7-button>
                         </div>
                     </f7-page>
+                    <inicio-page v-if="autenticado"></inicio-page>
                 </f7-pages>
             </f7-view>
         </f7-views>
@@ -48,7 +49,13 @@
         computed: {
             autenticarUsuarioURL() {
                 return this.$store.state.baseUrl + "usuarios/login?username=" + this.usernameLogin + "&password=" + this.passwordLogin;
+            },
+            autenticado() {
+                return this.$store.state.autenticado;
             }
+        },
+        mounted() {
+            this.checkSesionUsuario();
         },
         methods: {
             autenticarUsuario() {
@@ -57,6 +64,7 @@
                     $.get(this.autenticarUsuarioURL, function (response) {
                         if (response === true) {
                             _this.mostrarNotificacion("Autenticado con exito!", 3000);
+                            _this.crearSesion();
                         } else _this.mostrarNotificacion("Credenciales incorrectas, o usuario no existe.", 3000);
                     }).fail(function () {
                         _this.mostrarNotificacion("No se pudo enviar la solicitud. Por favor vuelve a intentar");
@@ -69,6 +77,18 @@
                     hold: duration,
                     closeOnClick: true
                 });
+            },
+            crearSesion() {
+                this.$store.commit('setUsername', this.usernameLogin);
+                this.$cookie.set('username', this.usernameLogin);
+                this.$store.commit('setAutenticado', true);
+            },
+            checkSesionUsuario() {
+                var username = this.$cookie.get('username');
+                if (username !== undefined && username !== "") {
+                    this.$store.commit('setUsername', username);
+                    this.$store.commit('setAutenticado', true);
+                }
             }
         }
     }
