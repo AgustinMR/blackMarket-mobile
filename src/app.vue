@@ -85,7 +85,7 @@
             },
             checkSesionUsuario() {
                 var username = this.$cookie.get('username');
-                if (username !== undefined && username !== "") {
+                if (username !== null && username !== "") {
                     this.$store.commit('setUsername', username);
                     this.$store.commit('setAutenticado', true);
                 }

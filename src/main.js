@@ -11,10 +11,12 @@ import App from './app';
 import {store} from './store';
 import VueCookie from 'vue-cookie';
 import Inicio from './pages/inicio';
+import Producto from './pages/producto';
 import Vuebar from 'vuebar';
 
 Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
+Vue.component('productos-page', Producto);
 Vue.use(VueCookie);
 Vue.use(Framework7Vue);
 new Vue({

@@ -1,28 +1,23 @@
 <template>
     <f7-page class="hide-bars-on-scroll" main="true" name="inicio">
         <f7-navbar class="theme-black" sliding>
-            <f7-nav-left>
-                <f7-link icon="icon-bars" open-panel="left"></f7-link>
-            </f7-nav-left>
             <f7-nav-center><img src="../assets/blackMarket.gif" style="height: 50px; margin-top: 25px"></f7-nav-center>
             <f7-nav-right style="margin-top: -40px">
                 <f7-link icon="search" style="margin: 0" open-popover="#popover"></f7-link>
             </f7-nav-right>
         </f7-navbar>
-
-        <f7-panel left cover layout="dark" style="margin-top: 20px; padding: 0">
-            <f7-list>
-                <f7-list-button href="/inicio/">Productos</f7-list-button>
-                <f7-list-button>Pedidos</f7-list-button>
-                <f7-list-button>Salir</f7-list-button>
-            </f7-list>
-        </f7-panel>
+        <f7-toolbar style="background-color: #b24e3a">
+            <f7-link href="/inicio/">
+                <i class="home icon big" style="padding: 0; margin-top: 0"></i>
+            </f7-link>
+            <f7-link><i class="in cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+            <f7-link @click="logout"><i class="sign out icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+        </f7-toolbar>
         <f7-popover id="popover">
             <f7-list form>
                 <f7-list-item>
                     <f7-label floating>Nombre</f7-label>
-                    <f7-input v-model="filtro" @keyup.enter="resetProductos" type="text"
-                              placeholder="Buscar por nombre..."/>
+                    <f7-input v-model="filtro" @keyup.enter="resetProductos" type="text"/>
                 </f7-list-item>
                 <f7-list-item>
                     <f7-label floating>Precio Min</f7-label>
@@ -51,22 +46,23 @@
                 </div>
             </f7-list>
         </f7-popover>
-        <div class="ui relaxed divided items" style="margin-top: 60px">
+        <div class="ui relaxed divided items" style="margin-top:20px">
             <template v-for="prod in productos">
-                <div @click="producto.id = prod.id; producto.nombre = prod.nombre; producto.empresa = prod.empresa; verProducto = true"
-                     class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
-                     style="cursor: pointer; padding: 20px">
+                <f7-link
+                        :href="'/productos/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa"
+                        class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
+                        style="cursor: pointer; padding: 20px">
                     <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 0; color: inherit">
                         {{prod.nombre}}
                         <h4 class="ui header" style="margin-top: 5px"><i
                                 class="user outline circle icon grey"></i>{{prod.empresa}}
                         </h4>
                     </h2>
-                </div>
+                </f7-link>
             </template>
         </div>
         <infinite-loading ref="infiniteLoading"
-                          style="padding: 20px"
+                          style="padding: 0px 0px 20px;margin-bottom: 40px"
                           @infinite="listarProductos">
             <div slot="no-more">
                 <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
@@ -79,13 +75,13 @@
                 </h3>
             </div>
         </infinite-loading>
-        <f7-popup :opened="verProducto" tablet-fullscreen>
-            <f7-navbar style="background-color: #b24e3a" sliding>
-                <f7-nav-left back-link="Volver" close-popup="true"></f7-nav-left>
-                <f7-nav-center>{{producto.nombre || 'Producto desconocido...'}}</f7-nav-center>
-            </f7-navbar>
-            adda
-        </f7-popup>
+        <!--      <f7-popup :opened="verProducto" tablet-fullscreen>
+                  <f7-navbar style="background-color: #b24e3a" sliding>
+                      <f7-nav-left back-link="Volver" close-popup="true"></f7-nav-left>
+                      <f7-nav-center>{{producto.nombre || 'Producto desconocido...'}}</f7-nav-center>
+                  </f7-navbar>
+                  adda
+              </f7-popup>-->
     </f7-page>
 </template>
 <script>
@@ -162,6 +158,11 @@
                 this.productos = [];
                 this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
                 this.$f7.closeModal();
+            },
+            logout() {
+                this.$store.commit('setUsername', '');
+                this.$store.commit('setAutenticado', false);
+                this.$cookie.delete('username');
             }
         },
         components: {
