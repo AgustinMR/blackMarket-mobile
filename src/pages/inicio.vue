@@ -21,61 +21,54 @@
             <f7-list form>
                 <f7-list-item>
                     <f7-label floating>Nombre</f7-label>
-                    <f7-input v-model="filtro" type="text" placeholder="Buscar por nombre..."/>
+                    <f7-input v-model="filtro" @keyup.enter="resetProductos" type="text"
+                              placeholder="Buscar por nombre..."/>
                 </f7-list-item>
                 <f7-list-item>
                     <f7-label floating>Precio Min</f7-label>
-                    <f7-input v-model="precioMin" type="number"/>
+                    <f7-input v-model="precioMin" @keyup.enter="resetProductos" type="number"/>
                 </f7-list-item>
                 <f7-list-item>
                     <f7-label floating>Precio Max</f7-label>
-                    <f7-input v-model="precioMax" type="number"/>
+                    <f7-input v-model="precioMax" @keyup.enter="resetProductos" type="number"/>
                 </f7-list-item>
                 <f7-block-title style="margin-top: 0" class="text-bm-red">Filtrar por categor&iacute;a</f7-block-title>
-                <f7-list
-                        class="searchbar-found"
-                        style="padding-bottom: 16px"
-                        media-list
-                        virtual
-                        :virtual-items="categorias"
-                >
-                    <t7-template>
-                        <f7-list-button media-item :title="'{{nombre}}'"></f7-list-button>
-                    </t7-template>
-                </f7-list>
+                <div class="ui selection list">
+                    <template v-for="cat in categorias">
+                        <div class="ui link item hover-bm-e8" @click="categoria = cat.nombre; resetProductos();">
+                            <h4 class="ui header text-bm-black hover-text-bm-red"
+                                style="font-weight: 500; padding: 7px">{{cat.nombre}}</h4>
+                        </div>
+                    </template>
+                </div>
             </f7-list>
         </f7-popover>
-        <div v-bar style="margin-top: 20px">
-            <div style="max-height: 100%">
-                <f7-list
-                        id="search-list"
-                        class="searchbar-found"
-                        media-list
-                        virtual
-                        :virtual-items="productos"
-                >
-                    <t7-template>
-                        <f7-list-item media-item link="#" :title="'{{nombre}}'"
-                                      :subtitle="'{{empresa}}' "></f7-list-item>
-                    </t7-template>
-                </f7-list>
-                <f7-list>
-                    <infinite-loading ref="infiniteLoading"
-                                      @infinite="listarProductos">
-                        <div slot="no-more">
-                            <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
-                                    class="search icon text-bm-red"></i>No hay m&aacute;s resultados.
-                            </h3>
-                        </div>
-                        <div slot="no-results">
-                            <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
-                                    class="search icon text-bm-red"></i>No hay resultados que mostrar.
-                            </h3>
-                        </div>
-                    </infinite-loading>
-                </f7-list>
-            </div>
+        <div class="ui relaxed divided items" style="margin-top: 60px">
+            <template v-for="producto in productos">
+                <div class="ui link item hover-bm-f1" style="cursor: pointer; padding: 20px">
+                    <h2 class="ui header text-bm-red" style="font-weight: 500; margin: 0; padding: 0">
+                        {{producto.nombre}}
+                        <h4 class="ui header" style="margin-top: 5px"><i
+                                class="user outline circle icon grey"></i>{{producto.empresa}}
+                        </h4>
+                    </h2>
+                </div>
+            </template>
         </div>
+        <infinite-loading ref="infiniteLoading"
+                          style="padding: 20px"
+                          @infinite="listarProductos">
+            <div slot="no-more">
+                <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
+                        class="search icon text-bm-red"></i>No hay m&aacute;s resultados.
+                </h3>
+            </div>
+            <div slot="no-results">
+                <h3 class="ui header text-paperviu-d7" style="opacity: 0.6"><i
+                        class="search icon text-bm-red"></i>No hay resultados que mostrar.
+                </h3>
+            </div>
+        </infinite-loading>
     </f7-page>
 </template>
 <script>
@@ -117,6 +110,8 @@
                 });
             },
             listarProductos($state) {
+                if (this.precioMin === "") this.precioMin = 0;
+                if (this.precioMax === "") this.precioMax = 0;
                 var _this = this;
                 setTimeout(() => {
                     $.get(_this.listarProductosURL, function (response) {
@@ -143,6 +138,7 @@
                 this.pagina = 1;
                 this.productos = [];
                 this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
+                this.$f7.closeModal();
             }
         },
         components: {
