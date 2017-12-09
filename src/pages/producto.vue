@@ -54,6 +54,16 @@
                         }
                     });
                 }
+            },
+            agregarAlCarrito() {
+                var producto = {
+                    id: this.id,
+                    nombre: this.nombre,
+                    empresa: this.empresa,
+                    precio: this.precio || 0,
+                    cantidad: 1
+                };
+                this.$store.commit('agregarProducto');
             }
         }
     }
