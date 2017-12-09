@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/producto.vue" afterPath="$PROJECT_DIR$/src/pages/producto.vue" />
-    </list>
+    <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -217,12 +215,12 @@
       <workItem from="1512838859500" duration="4405000" />
       <workItem from="1512857627113" duration="5123000" />
       <workItem from="1512862792129" duration="773000" />
-      <workItem from="1512856363974" duration="5139000" />
+      <workItem from="1512856363974" duration="5243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36603000" />
+    <option name="totallyTimeSpent" value="36707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1382" height="1040" extended-state="0" />
