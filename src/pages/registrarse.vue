@@ -1,6 +1,6 @@
 <template>
     <f7-page class="theme-black">
-        <f7-navbar title="Registrarse" back-link="Volver"></f7-navbar>
+        <f7-navbar style="background-color: #b24e3a" title="Registrarse" back-link="Volver"></f7-navbar>
         <div class="ui text container" style="padding: 20px; margin: 0">
             <f7-list form>
                 <f7-list-item style="width: 100%">
@@ -47,6 +47,11 @@
                     $.post(this.registrarUsuarioURL, "username=" + this.username + "&password=" + this.password + "&email=" + this.email, function (response) {
                         if (response === true) {
                             _this.mostrarNotificacion("Registro completado!", 3000);
+                            _this.$store.commit('setUsername', _this.username);
+                            _this.$store.commit('setAutenticado', true);
+                            _this.$cookie.set('username', _this.username);
+                            _this.$router.back();
+                            _this.mostrarNotificacion("Bienvenido a Blackmarket!", 4000);
                         } else _this.mostrarNotificacion("No se pudo completar el registro", 3000);
                     }).fail(function () {
                         _this.mostrarNotificacion("No se pudo enviar solicitud. Por favor vuelve a intentar...", 3000);
