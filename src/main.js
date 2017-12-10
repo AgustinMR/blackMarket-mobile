@@ -14,13 +14,16 @@ import Inicio from './pages/inicio';
 import Carrito from './pages/carrito';
 import Producto from './pages/producto';
 import Vuebar from 'vuebar';
+import Storage from 'vue-web-storage';
 
+Vue.use(Storage);
 Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
 Vue.component('productos-page', Producto);
 Vue.component('carrito-page', Carrito);
 Vue.use(VueCookie);
 Vue.use(Framework7Vue);
+
 new Vue({
     el: '#app',
     template: '<app/>',

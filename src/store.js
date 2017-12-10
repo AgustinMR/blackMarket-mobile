@@ -26,6 +26,9 @@ export const store = new Vuex.Store({
             state.productos = state.productos.filter(function (producto) {
                 return producto.id !== id;
             });
+        },
+        setProductos(state, productos) {
+            state.productos = productos;
         }
     }
 });

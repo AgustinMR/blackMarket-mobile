@@ -88,6 +88,7 @@
                 if (username !== null && username !== "") {
                     this.$store.commit('setUsername', username);
                     this.$store.commit('setAutenticado', true);
+                    if (this.$storage.get('carrito') !== null) this.$store.commit('setProductos', this.$storage.get('carrito'));
                 }
             }
         }
