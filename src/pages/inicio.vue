@@ -157,6 +157,7 @@
                 this.$store.commit('setUsername', '');
                 this.$store.commit('setAutenticado', false);
                 this.$cookie.delete('username');
+                this.$storage.remove('carrito');
             }
         },
         components: {

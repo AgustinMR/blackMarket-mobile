@@ -68,8 +68,8 @@
                     cantidad: 1
                 };
                 this.$store.commit('agregarProducto', producto);
-                this.$cookie.set('carrito', this.$store.state.productos);
-
+                this.$storage.remove('carrito');
+                this.$storage.set('carrito', this.$store.state.productos);
             }
         }
     }
