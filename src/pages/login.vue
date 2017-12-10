@@ -1,5 +1,5 @@
 <template>
-    <f7-page v-if="!autenticado" class="theme-black">
+    <f7-page class="theme-black">
         <div class="ui center aligned text container" style="margin: 0; padding: 20px">
             <img src="../assets/blackMarket.gif" style="height: 80px">
         </div>

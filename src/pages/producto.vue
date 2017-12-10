@@ -20,8 +20,8 @@
                 <i class="barcode grey icon"></i>{{codigo}}
             </h3>
             <h3 class="ui header">
-                <i :class="{'checkmark grey icon': precio > 0, 'warning orange icon': precio === 0}"></i>Stock:
-                {{stock}}
+                <i :class="{'checkmark grey icon': stock > 0, 'warning orange icon': stock === 0}"></i>
+                {{stock > 0 ? 'Hay stock disponible' : 'No hay stock'}}
             </h3>
         </div>
     </f7-page>
@@ -65,12 +65,21 @@
                     nombre: this.nombre,
                     empresa: this.empresa,
                     precio: this.precio || 0,
+                    stock: this.stock || 0,
                     cantidad: 1
                 };
                 this.$store.commit('agregarProducto', producto);
                 this.$storage.remove('carrito');
                 this.$storage.set('carrito', this.$store.state.productos);
-            }
+                this.mostrarNotificacion("Producto agregado al carrito!", 3000);
+            },
+            mostrarNotificacion(title, duration) {
+                this.$f7.addNotification({
+                    message: title,
+                    hold: duration,
+                    closeOnClick: true
+                });
+            },
         }
     }
 </script>

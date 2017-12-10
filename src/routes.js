@@ -12,6 +12,10 @@ export default [
         component: 'productos-page'
     },
     {
+        path: '/carrito-item/:id/:nombre/:empresa/:precio/:cantidad',
+        component: 'carrito-item-page'
+    },
+    {
         path: '/carrito/',
         component: 'carrito-page'
     },
