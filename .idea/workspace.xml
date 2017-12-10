@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pages/carrito.vue" afterPath="$PROJECT_DIR$/src/pages/carrito.vue" />
+      <change beforePath="$PROJECT_DIR$/src/pages/inicio.vue" afterPath="$PROJECT_DIR$/src/pages/inicio.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,32 +20,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inicio.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="inicio.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
+            <state relative-caret-position="337">
+              <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1797#1805#0" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#4145#4153#0" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +39,8 @@
       <file leaf-file-name="producto.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/producto.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="72" selection-end-column="74" />
+            <state relative-caret-position="238">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -74,7 +59,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="119">
               <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -86,7 +71,7 @@
       <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
+            <state relative-caret-position="17">
               <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding>
                 <element signature="e#873#881#0" expanded="true" />
@@ -95,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carrito.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="carrito.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/carrito.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="42" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -123,7 +108,7 @@
       <file leaf-file-name="registrarse.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="765">
               <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -135,7 +120,7 @@
       <file leaf-file-name="CarritoItem.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/CarritoItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
+            <state relative-caret-position="952">
               <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="62" selection-end-column="14" />
               <folding />
             </state>
@@ -152,7 +137,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/pages/home.vue" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/pages/inicio.vue" />
         <option value="$PROJECT_DIR$/src/app.vue" />
         <option value="$PROJECT_DIR$/src/pages/registrarse.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
@@ -163,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/pages/CarritoItem.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/pages/carrito.vue" />
+        <option value="$PROJECT_DIR$/src/pages/inicio.vue" />
       </list>
     </option>
   </component>
@@ -301,11 +286,12 @@
       <workItem from="1512856363974" duration="7510000" />
       <workItem from="1512909431785" duration="1317000" />
       <workItem from="1512926284628" duration="9580000" />
+      <workItem from="1512943251295" duration="961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52495000" />
+    <option name="totallyTimeSpent" value="53499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1382" height="1041" extended-state="0" />
@@ -316,8 +302,8 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11441144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15625" sideWeight="0.5074627" order="2" side_tool="true" content_ui="tabs" />
@@ -363,26 +349,11 @@
         <state relative-caret-position="497">
           <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -407,7 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -439,26 +409,11 @@
         <state relative-caret-position="2635">
           <caret line="155" column="12" lean-forward="true" selection-start-line="155" selection-start-column="12" selection-end-line="159" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,26 +464,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,26 +519,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,26 +533,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,26 +572,11 @@
         <state relative-caret-position="595">
           <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,26 +611,11 @@
         <state relative-caret-position="1020">
           <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -770,26 +650,11 @@
         <state relative-caret-position="595">
           <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="765">
           <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -860,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="119">
           <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -870,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
+        <state relative-caret-position="17">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding>
             <element signature="e#873#881#0" expanded="true" />
@@ -893,46 +758,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/producto.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="72" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#0;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#1;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#2;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#f7-link#3;n#f7-toolbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-block-title#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1797#1805#0" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#template#0;n#div#0;n#f7-list#0;n#f7-popover#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#h2#0;n#f7-link#0;n#template#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#4145#4153#0" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#infinite-loading#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/CarritoItem.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
+        <state relative-caret-position="952">
           <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="62" selection-end-column="14" />
           <folding />
         </state>
@@ -946,10 +774,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/producto.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/carrito.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="272">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="42" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#img#0;n#f7-nav-center#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -965,6 +801,20 @@
             <element signature="n#style#0;n#h3#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h3#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#h3#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#h2#0;n#div#0;n#f7-list-item#0;n#template#0;n#f7-list#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

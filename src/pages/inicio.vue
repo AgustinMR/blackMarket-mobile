@@ -47,20 +47,27 @@
                 </div>
             </f7-list>
         </f7-popover>
-        <div class="ui relaxed divided items" style="margin-top:65px">
-            <template v-for="prod in productos">
-                <f7-link
-                        :href="'/productos/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa"
-                        class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
-                        style="cursor: pointer; padding: 20px">
-                    <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 0; color: inherit">
-                        {{prod.nombre}}
-                        <h4 class="ui header" style="margin-top: 5px"><i
-                                class="user outline circle icon grey"></i>{{prod.empresa}}
-                        </h4>
-                    </h2>
-                </f7-link>
-            </template>
+        <div class="ui relaxed divided items" style="padding-top: 10px">
+            <f7-list no-hairlines-between="true" no-hairlines="true">
+                <template v-for="prod in productos">
+                    <f7-list-item
+                            :link="'/productos/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa"
+                            class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
+                            style="cursor: pointer; padding:7px">
+                        <f7-swipeout-actions>
+                            <f7-swipeout-button delete>Eliminar</f7-swipeout-button>
+                        </f7-swipeout-actions>
+                        <div slot="inner-start" style="width:inherit">
+                            <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 0; color: inherit">
+                                {{prod.nombre}}
+                                <h4 class="ui header" style="margin-top: 5px; border: 0"><i
+                                        class="user outline circle icon grey"></i>{{prod.empresa}}
+                                </h4>
+                            </h2>
+                        </div>
+                    </f7-list-item>
+                </template>
+            </f7-list>
         </div>
         <infinite-loading ref="infiniteLoading"
                           style="padding: 0px 0px 20px;margin-bottom: 40px"
