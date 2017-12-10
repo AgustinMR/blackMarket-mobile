@@ -27,4 +27,8 @@ export default [
         path: '/app/',
         component: require('./app.vue')
     },
+    {
+        path: '/pedidos/',
+        component: 'pedidos-page'
+    },
 ]

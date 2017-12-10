@@ -11,7 +11,7 @@
                 <i class="home icon big" style="padding: 0; margin-top: 0"></i>
             </f7-link>
             <f7-link href="/carrito/"><i class="cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
-            <f7-link><i class="shipping icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+            <f7-link href="/pedidos/"><i class="shipping icon big" style="padding: 0; margin-top: 0"></i></f7-link>
             <f7-link @click="logout"><i class="sign out icon big" style="padding: 0; margin-top: 0"></i></f7-link>
         </f7-toolbar>
         <f7-popover id="popover">
@@ -48,7 +48,7 @@
             </f7-list>
         </f7-popover>
         <div class="ui relaxed divided items" style="padding-top: 10px">
-            <f7-list no-hairlines-between="true" no-hairlines="true">
+            <f7-list :no-hairlines-between="true" :no-hairlines="true">
                 <template v-for="prod in productos">
                     <f7-list-item
                             :link="'/productos/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa"
