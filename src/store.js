@@ -29,6 +29,10 @@ export const store = new Vuex.Store({
         },
         setProductos(state, productos) {
             state.productos = productos;
+        },
+        actualizarCantidad(state, producto) {
+            var prod = state.productos.find(p => p.id === producto.id);
+            if (prod !== undefined) prod.cantidad = producto.cantidad;
         }
     }
 });
