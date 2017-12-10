@@ -6,7 +6,7 @@
                 <f7-link icon="search" style="margin: 0" open-popover="#popover"></f7-link>
             </f7-nav-right>
         </f7-navbar>
-        <f7-toolbar style="background-color: #b24e3a">
+        <f7-toolbar bottom style="background-color: #b24e3a">
             <f7-link href="/inicio/">
                 <i class="home icon big" style="padding: 0; margin-top: 0"></i>
             </f7-link>
@@ -47,7 +47,7 @@
                 </div>
             </f7-list>
         </f7-popover>
-        <div class="ui relaxed divided items" style="margin-top:20px">
+        <div class="ui relaxed divided items" style="margin-top:65px">
             <template v-for="prod in productos">
                 <f7-link
                         :href="'/productos/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa"
