@@ -23,17 +23,20 @@
                             @swipeout:deleted="quitarProductoDelCarrito(prod.id)"
                             :link="'/carrito-item/' + prod.id + '/'+ prod.nombre + '/'+prod.empresa + '/'+prod.precio + '/' + prod.cantidad"
                             class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
-                            style="cursor: pointer; padding-top: 10px; padding-left: 20px; padding-bottom: 10px">
-                        <h2 class="ui header" style="font-weight: 500; margin: 0; padding: 5px; color: inherit">
-                            <f7-swipeout-actions>
-                                <f7-swipeout-button delete>Eliminar</f7-swipeout-button>
-                            </f7-swipeout-actions>
-                            {{prod.nombre}}
-                            <h3 class="ui header" style="margin-top: 5px; font-weight: 500;">
-                                Cantidad: <span style="font-weight: 600;">x{{prod.cantidad + '  -  '}}</span>
-                                Precio: <span style="font-weight: 600;">${{prod.precio || 0}}</span>
-                            </h3>
-                        </h2>
+                            style="cursor: pointer; padding-top: 0; padding-left: 20px; padding-bottom: 10px">
+                        <f7-swipeout-actions>
+                            <f7-swipeout-button delete>Eliminar</f7-swipeout-button>
+                        </f7-swipeout-actions>
+                        <div slot="inner-start" style="width:inherit">
+                            <h2 class="ui header"
+                                style="font-weight: 500;padding: 5px; color: inherit">
+                                {{prod.nombre}}
+                                <h3 class="ui header" style="margin-top: 5px; font-weight: 500; width: inherit">
+                                    Cantidad: <span style="font-weight: 600;">x{{prod.cantidad + '  -  '}}</span>
+                                    Precio: <span style="font-weight: 600;">${{prod.precio || 0}}</span>
+                                </h3>
+                            </h2>
+                        </div>
                     </f7-list-item>
                 </template>
             </f7-list>
