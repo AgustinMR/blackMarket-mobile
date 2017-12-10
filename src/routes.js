@@ -15,4 +15,12 @@ export default [
         path: '/carrito/',
         component: 'carrito-page'
     },
+    {
+        path: '/login/',
+        component: 'login-page'
+    },
+    {
+        path: '/app/',
+        component: require('./app.vue')
+    },
 ]

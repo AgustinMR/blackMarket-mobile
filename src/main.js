@@ -13,6 +13,7 @@ import VueCookie from 'vue-cookie';
 import Inicio from './pages/inicio';
 import Carrito from './pages/carrito';
 import Producto from './pages/producto';
+import Login from './pages/login.vue';
 import Vuebar from 'vuebar';
 import Storage from 'vue-web-storage';
 
@@ -21,6 +22,7 @@ Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
 Vue.component('productos-page', Producto);
 Vue.component('carrito-page', Carrito);
+Vue.component('login-page', Login);
 Vue.use(VueCookie);
 Vue.use(Framework7Vue);
 
