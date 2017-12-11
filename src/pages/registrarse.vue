@@ -20,7 +20,7 @@
         </div>
         <div class="ui center aligned text container" style="padding: 20px">
             <h3 class="ui header text-bm-red">Registrarse con redes sociales</h3>
-            <button class="ui facebook icon button large">
+            <button @click="registrarUsuarioFacebook" class="ui facebook icon button large">
                 <i class="facebook f large icon"></i>
             </button>
         </div>
@@ -57,6 +57,31 @@
                         _this.mostrarNotificacion("No se pudo enviar solicitud. Por favor vuelve a intentar...", 3000);
                     });
                 } else this.mostrarNotificacion("Debes ingresar un username y password!", 3000);
+            },
+            registrarUsuarioFacebook() {
+                var _this = this;
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        FB.api('/me', {fields: 'email'}, function (response) {
+                            $.post(_this.registrarUsuarioURL, "username=" + response['email'] + "&password=" + "&email=" + response['email'], function (data) {
+                                if (data === true) {
+                                    _this.mostrarNotificacion("Registro completado!", 3000);
+                                    _this.$store.commit('setUsername', _this.username);
+                                    _this.$store.commit('setAutenticado', true);
+                                    _this.$cookie.set('username', _this.username);
+                                    _this.$router.back();
+                                    _this.mostrarNotificacion("Bienvenido a Blackmarket!", 4000);
+                                } else _this.mostrarNotificacion("No se pudo completar el registro", 3000);
+                            }).fail(function () {
+                                _this.mostrarNotificacion("No se pudo enviar solicitud. Por favor vuelve a intentar...", 3000);
+                            });
+                        });
+                    }
+                    else {
+                        FB.login();
+                    }
+                });
+
             },
             mostrarNotificacion(title, duration) {
                 this.$f7.addNotification({
