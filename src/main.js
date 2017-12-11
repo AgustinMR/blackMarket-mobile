@@ -18,7 +18,14 @@ import Pedidos from './pages/pedidos.vue';
 import CarritoItem from './pages/CarritoItem.vue';
 import Vuebar from 'vuebar';
 import Storage from 'vue-web-storage';
+import * as VueGoogleMaps from 'vue2-google-maps';
 
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyBvF2bHcbmE6A1hrMLFfdbaR9nom8clN-U',
+        libraries: 'places',
+    }
+});
 Vue.use(Storage);
 Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
