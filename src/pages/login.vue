@@ -5,7 +5,8 @@
         </div>
         <div class="ui center aligned text container">
             <h2 class="ui header text-bm-red">Iniciar Sesi&oacute;n</h2>
-            <button class="ui icon facebook circular button"><i class="facebook f large icon"></i>
+            <button @click="autenticarUsuarioFacebook" class="ui icon facebook circular button"><i
+                    class="facebook f large icon"></i>
             </button>
         </div>
         <div class="ui text container" style="padding: 0; margin: 0">
@@ -21,7 +22,7 @@
                     <f7-input type="password" v-model="passwordLogin"/>
                 </f7-list-item>
             </f7-list>
-            <f7-button big raised @click="autenticarUsuario" style="margin: 0">Iniciar Sesi&oacute;n</f7-button>
+            <f7-button fill big color="color-black" raised @click="autenticarUsuario" style="margin: 0">Iniciar Sesi&oacute;n</f7-button>
         </div>
         <div class="ui center aligned text container" style="padding: 20px">
             <h3 class="ui header text-bm-red">&iquest;No tienes cuenta?</h3>
@@ -34,13 +35,17 @@
         data() {
             return {
                 usernameLogin: '',
-                passwordLogin: ''
+                passwordLogin: '',
+                usernameFacebook: ''
             }
         },
         computed: {
             autenticarUsuarioURL() {
                 return this.$store.state.baseUrl + "usuarios/login?username=" + this.usernameLogin + "&password=" + this.passwordLogin;
             },
+            autenticarUsuarioFacebookURL() {
+                return this.$store.state.baseUrl + "usuarios/facebook?username=" + this.usernameFacebook;
+            }
         },
         methods: {
             autenticarUsuario() {
@@ -55,6 +60,28 @@
                         _this.mostrarNotificacion("No se pudo enviar la solicitud. Por favor vuelve a intentar");
                     });
                 } else this.mostrarNotificacion("Debes ingresar username y password!", 3000);
+            },
+            autenticarUsuarioFacebook() {
+                var _this = this;
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        FB.api('/me', {fields: 'email'}, function (response) {
+                            _this.usernameFacebook = response['email'];
+                            $.get(_this.autenticarUsuarioFacebookURL, function (response) {
+                                if (response === true) {
+                                    _this.mostrarNotificacion("Autenticado con exito!", 3000);
+                                    _this.usernameLogin = _this.usernameFacebook;
+                                    _this.crearSesion();
+                                } else _this.mostrarNotificacion("Credenciales incorrectas, o usuario no existe.", 3000);
+                            }).fail(function () {
+                                _this.mostrarNotificacion("No se pudo enviar la solicitud. Por favor vuelve a intentar");
+                            });
+                        });
+                    }
+                    else {
+                        FB.login();
+                    }
+                });
             },
             mostrarNotificacion(title, duration) {
                 this.$f7.addNotification({
