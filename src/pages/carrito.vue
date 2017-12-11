@@ -2,8 +2,8 @@
     <f7-page>
         <f7-navbar class="theme-black">
             <f7-nav-center><img src="../assets/blackMarket.gif" style="height: 50px; margin-top: 25px"></f7-nav-center>
-            <f7-nav-right style="margin-top: -40px">
-
+            <f7-nav-right v-show="productos.length > 0" style="margin-right: 10px">
+                <f7-button @click="validarProductos" round style="background-color: #b24e3a">realizar pedido</f7-button>
             </f7-nav-right>
         </f7-navbar>
         <f7-toolbar bottom style="background-color: #b24e3a">
@@ -46,7 +46,9 @@
 <script>
     export default {
         data() {
-            return {}
+            return {
+                lista: []
+            }
         },
         computed: {
             username() {
@@ -54,14 +56,40 @@
             },
             productos() {
                 return this.$store.state.productos;
+            },
+            validarProductosURL() {
+                return this.$store.state.baseUrl + "productos/validar";
             }
         },
         methods: {
+            validarProductos() {
+                this.lista = [];
+                var _this = this;
+                if (this.productos.length > 0) {
+                    $.each(this.productos, function (index, producto) {
+                        $.get(_this.validarProductosURL + '?producto=' + producto.id + '&cantidad=' + producto.cantidad, function (response) {
+                            if (response !== undefined) {
+                                if (response.cantidad > 0) {
+                                    var prod = _this.productos.find(p => p.id === response.id);
+                                    if (prod !== undefined) {
+                                        _this.lista.push({
+                                            id: response.id,
+                                            nombre: prod.nombre,
+                                            precio: prod.precio || 0,
+                                            cantidad: response.cantidad
+                                        });
+                                    }
+                                }
+                            }
+                        });
+                    });
+                } else _this.mostrarNotificacion("Debes tener al menos un producto agregado al carrito!", 3000);
+            },
             quitarProductoDelCarrito(id) {
                 if (id !== undefined && id !== null && id !== '') {
                     this.$store.commit('quitarProducto', id);
                     this.$storage.remove('carrito');
-                    this.$storage.set('carrito', this.$store.state.productos);
+                    this.$storage.set('carrito', this.productos);
                     this.mostrarNotificacion("Producto quitado del carrito!", 3000);
                 }
             },

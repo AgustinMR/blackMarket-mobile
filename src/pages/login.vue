@@ -8,20 +8,22 @@
             <button class="ui icon facebook circular button"><i class="facebook f large icon"></i>
             </button>
         </div>
-        <div class="ui text container" style="padding: 20px; margin: 0">
-            <f7-list form>
+        <div class="ui text container" style="padding: 0; margin: 0">
+            <f7-list :no-hairlines="true" form>
                 <f7-list-item style="width: 100%">
-                    <f7-label>Username</f7-label>
+                    <f7-label><h3 class="ui header text-bm-red" style="margin: 0; font-weight: 500;">Username</h3>
+                    </f7-label>
                     <f7-input type="text" v-model="usernameLogin"/>
                 </f7-list-item>
                 <f7-list-item style="width: 100%">
-                    <f7-label>Contrase&ntilde;a</f7-label>
+                    <f7-label><h3 class="ui header text-bm-red" style="margin: 0; font-weight: 500;">
+                        Contrase&ntilde;a</h3></f7-label>
                     <f7-input type="password" v-model="passwordLogin"/>
                 </f7-list-item>
             </f7-list>
-            <f7-button @click="autenticarUsuario" big raised fill>Iniciar Sesi&oacute;n</f7-button>
+            <f7-button big raised @click="autenticarUsuario" style="margin: 0">Iniciar Sesi&oacute;n</f7-button>
         </div>
-        <div class="ui center aligned text container">
+        <div class="ui center aligned text container" style="padding: 20px">
             <h3 class="ui header text-bm-red">&iquest;No tienes cuenta?</h3>
             <f7-button href="/registrarse/">Registrarse</f7-button>
         </div>
