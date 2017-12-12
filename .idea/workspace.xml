@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69030d9-0428-4bf5-a9aa-2e25d696efc3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/pages/login.vue" afterPath="$PROJECT_DIR$/src/pages/login.vue" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registrarse.vue" afterPath="$PROJECT_DIR$/src/pages/registrarse.vue" />
       <change beforePath="$PROJECT_DIR$/src/pages/usuario.vue" afterPath="$PROJECT_DIR$/src/pages/usuario.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="carrito.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/carrito.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="-1925">
               <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#f7-button#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -89,21 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrarse.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="registrarse.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="455">
+              <caret line="67" column="78" lean-forward="true" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+            <state relative-caret-position="574">
+              <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="98" selection-end-column="19" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -123,8 +123,8 @@
       <file leaf-file-name="usuario.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/usuario.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="-225">
+              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#f7-button#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -148,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/pages/CarritoItem.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/pages/registrarse.vue" />
         <option value="$PROJECT_DIR$/src/pages/PedidoItem.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/routes.js" />
@@ -157,6 +156,7 @@
         <option value="$PROJECT_DIR$/src/pages/pedidos.vue" />
         <option value="$PROJECT_DIR$/src/pages/usuario.vue" />
         <option value="$PROJECT_DIR$/src/pages/login.vue" />
+        <option value="$PROJECT_DIR$/src/pages/registrarse.vue" />
       </list>
     </option>
   </component>
@@ -298,12 +298,12 @@
       <workItem from="1513029645195" duration="6825000" />
       <workItem from="1513038733939" duration="937000" />
       <workItem from="1513081311892" duration="7110000" />
-      <workItem from="1513096342898" duration="8696000" />
+      <workItem from="1513096342898" duration="9852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101176000" />
+    <option name="totallyTimeSpent" value="102332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1382" height="1040" extended-state="0" />
@@ -753,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/PedidoItem.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -793,29 +785,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/inicio.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/carrito.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#f7-button#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,10 +803,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/carrito.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1925">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#f7-button#0;n#f7-nav-right#0;n#f7-navbar#0;n#f7-popup#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/usuario.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="-225">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#f7-button#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -842,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+        <state relative-caret-position="574">
+          <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="98" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
@@ -856,6 +848,14 @@
             <element signature="n#style#0;n#f7-button#0;n#div#2;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#f7-page#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/registrarse.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="67" column="78" lean-forward="true" selection-start-line="67" selection-start-column="78" selection-end-line="67" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
