@@ -75,6 +75,11 @@
                 return this.$store.state.baseUrl + "pedidos/usuario?username=" + this.username + "&pagina=" + this.pagina;
             }
         },
+        mounted() {
+            this.pagina = 1;
+            this.pedidos = [];
+            this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
+        },
         methods: {
             listarPedidos($state) {
                 var _this = this;
