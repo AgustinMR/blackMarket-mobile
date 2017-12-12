@@ -16,7 +16,7 @@
             </f7-link>
         </f7-toolbar>
         <div class="ui relaxed divided items" style="padding-top: 20px">
-            <f7-list :no-hairlines="true">
+            <f7-list :no-hairlines-between="true" :no-hairlines="true">
                 <template v-for="pedido in pedidos">
                     <f7-list-item
                             media-list
