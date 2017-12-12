@@ -32,6 +32,10 @@ export default [
         component: 'pedidos-page'
     },
     {
+        path: '/usuario/',
+        component: 'usuario-page'
+    },
+    {
         path: '/pedido-item/:id/:fecha/:destino/:estado',
         component: 'pedido-item-page'
     },
