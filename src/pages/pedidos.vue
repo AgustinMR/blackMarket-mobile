@@ -12,8 +12,7 @@
             </f7-link>
             <f7-link href="/carrito/"><i class="cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
             <f7-link href="/pedidos/"><i class="shipping icon big" style="padding: 0; margin-top: 0"></i></f7-link>
-            <f7-link href="/app/" @click="logout"><i class="sign out icon big" style="padding: 0; margin-top: 0"></i>
-            </f7-link>
+            <f7-link href="/usuario/"><i class="user icon big" style="padding: 0; margin-top: 0"></i></f7-link>
         </f7-toolbar>
         <div class="ui relaxed divided items" style="padding-top: 20px">
             <f7-list :no-hairlines-between="true" :no-hairlines="true">

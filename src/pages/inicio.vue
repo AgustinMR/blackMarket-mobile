@@ -12,7 +12,7 @@
             </f7-link>
             <f7-link href="/carrito/"><i class="cart icon big" style="padding: 0; margin-top: 0"></i></f7-link>
             <f7-link href="/pedidos/"><i class="shipping icon big" style="padding: 0; margin-top: 0"></i></f7-link>
-            <f7-link @click="logout"><i class="sign out icon big" style="padding: 0; margin-top: 0"></i></f7-link>
+            <f7-link href="/usuario/"><i class="user icon big" style="padding: 0; margin-top: 0"></i></f7-link>
         </f7-toolbar>
         <f7-popover id="popover">
             <f7-list form>
@@ -159,12 +159,6 @@
                 this.productos = [];
                 this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset');
                 this.$f7.closeModal();
-            },
-            logout() {
-                this.$store.commit('setUsername', '');
-                this.$store.commit('setAutenticado', false);
-                this.$cookie.delete('username');
-                this.$storage.remove('carrito');
             }
         },
         components: {
