@@ -50,7 +50,10 @@
                             _this.$store.commit('setUsername', _this.username);
                             _this.$store.commit('setAutenticado', true);
                             _this.$cookie.set('username', _this.username);
-                            _this.$router.back();
+                            _this.$router.load({
+                                url: '/inicio/',
+                                reload: true
+                            });
                             _this.mostrarNotificacion("Bienvenido a Blackmarket!", 4000);
                         } else _this.mostrarNotificacion("No se pudo completar el registro", 3000);
                     }).fail(function () {
@@ -69,7 +72,10 @@
                                     _this.$store.commit('setUsername', _this.username);
                                     _this.$store.commit('setAutenticado', true);
                                     _this.$cookie.set('username', _this.username);
-                                    _this.$router.back();
+                                    _this.$router.load({
+                                        url: '/inicio/',
+                                        reload: true
+                                    });
                                     _this.mostrarNotificacion("Bienvenido a Blackmarket!", 4000);
                                 } else _this.mostrarNotificacion("No se pudo completar el registro", 3000);
                             }).fail(function () {
