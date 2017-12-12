@@ -20,6 +20,7 @@
                 <template v-for="pedido in pedidos">
                     <f7-list-item
                             media-list
+                            :link="'/pedido-item/' + pedido.id + '/' + pedido.fecha + '/' + pedido.destino + '/' + pedido.estado"
                             class="ui link item hover-bm-f1 text-bm-black hover-text-bm-red"
                             style="cursor: pointer; padding:7px">
                         <div slot="inner-start" style="width:inherit">
