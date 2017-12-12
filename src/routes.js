@@ -31,4 +31,8 @@ export default [
         path: '/pedidos/',
         component: 'pedidos-page'
     },
+    {
+        path: '/pedido-item/:id/:fecha/:destino/:estado',
+        component: 'pedido-item-page'
+    },
 ]

@@ -12,6 +12,7 @@ import {store} from './store';
 import VueCookie from 'vue-cookie';
 import Inicio from './pages/inicio';
 import Carrito from './pages/carrito';
+import PedidoItem from './pages/PedidoItem';
 import Producto from './pages/producto';
 import Login from './pages/login.vue';
 import Pedidos from './pages/pedidos.vue';
@@ -29,6 +30,7 @@ Vue.use(VueGoogleMaps, {
 Vue.use(Storage);
 Vue.use(Vuebar);
 Vue.component('inicio-page', Inicio);
+Vue.component('pedido-item-page', PedidoItem);
 Vue.component('productos-page', Producto);
 Vue.component('carrito-page', Carrito);
 Vue.component('pedidos-page', Pedidos);
