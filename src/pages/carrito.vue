@@ -97,6 +97,7 @@
                 total: 0,
                 cantProductos: 0,
                 destino: '',
+                productosList: ''
             }
         },
         computed: {
@@ -110,12 +111,13 @@
                 return this.$store.state.baseUrl + "productos/validar";
             },
             realizarPedidoURL() {
-
+                return this.$store.state.baseUrl + "pedidos/crear";
             }
         },
         methods: {
             validarProductos() {
                 this.lista = [];
+                this.cantProductos = 0;
                 var _this = this;
                 if (this.productos.length > 0) {
                     $.each(this.productos, function (index, producto) {
@@ -139,7 +141,20 @@
                 } else _this.mostrarNotificacion("Debes tener al menos un producto agregado al carrito!", 3000);
             },
             realizarPedido() {
-
+                if (this.username !== undefined && this.username !== '') {
+                    if (this.lista.length > 0) {
+                        if (this.destino !== '') {
+                            var _this = this;
+                            $.each(this.lista, function (index, producto) {
+                                _this.productosList += producto.id + '-' + producto.cantidad;
+                                if (index < _this.lista.length) _this.productosList += ",";
+                            });
+                            $.post(this.realizarPedidoURL, 'username=' + this.username + '&destino=' + this.destino + '&productos=' + this.productosList, function (response) {
+                                alert(response);
+                            });
+                        } else this.mostrarNotificacion("Debes ingresar un destino para tu pedido", 3000);
+                    } else this.mostrarNotificacion("Debe haber al menos un producto seleccionado", 3000);
+                }
             },
             quitarProductoDelCarrito(id) {
                 if (id !== undefined && id !== null && id !== '') {
