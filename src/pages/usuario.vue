@@ -10,7 +10,8 @@
             <h3 class="ui header">
                 <i class="calendar grey icon"></i>Usuario desde: {{fecha}}
             </h3>
-            <f7-button fill color="black" raised style="margin-top: 20px; width: 40%">
+            <f7-button href="/app/" :reload="true" @click="logout" fill color="black" raised
+                       style="margin-top: 20px; width: 40%">
                 Cerrar Sesi&oacute;n
             </f7-button>
         </div>
