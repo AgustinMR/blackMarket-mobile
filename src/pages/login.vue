@@ -94,6 +94,7 @@
                 this.$store.commit('setUsername', this.usernameLogin);
                 this.$cookie.set('username', this.usernameLogin);
                 this.$store.commit('setAutenticado', true);
+                this.$router.back();
             },
         }
     }
