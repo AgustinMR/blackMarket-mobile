@@ -1,16 +1,16 @@
 <template>
     <f7-page class="theme-black">
         <div class="ui center aligned text container" style="margin: 0; padding: 20px">
-            <img src="../assets/blackMarket.gif" style="height: 80px">
+            <img src="../assets/blackMarket.gif" style="height: 60px">
         </div>
-        <div class="ui center aligned text container">
+        <div class="ui center aligned text container" style="margin: 0">
             <h2 class="ui header text-bm-red">Iniciar Sesi&oacute;n</h2>
             <button @click="autenticarUsuarioFacebook" class="ui icon facebook circular button"><i
                     class="facebook f large icon"></i>
             </button>
         </div>
         <div class="ui text container" style="padding: 0; margin: 0">
-            <f7-list :no-hairlines="true" form>
+            <f7-list style="margin: 0" :no-hairlines="true" form>
                 <f7-list-item style="width: 100%">
                     <f7-label><h3 class="ui header text-bm-red" style="margin: 0; font-weight: 500;">Username</h3>
                     </f7-label>
