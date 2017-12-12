@@ -48,7 +48,8 @@
                 </f7-nav-left>
                 <f7-nav-center>Realizar pedido</f7-nav-center>
                 <f7-nav-right v-show="productos.length > 0" style="margin-right: 10px">
-                    <f7-button raised @click="realizarPedido" style="margin: 0; background-color: #000">Confirmar
+                    <f7-button close-popup="#listaPopup" raised @click="realizarPedido"
+                               style="margin: 0; background-color: #000">Confirmar
                     </f7-button>
                 </f7-nav-right>
             </f7-navbar>
@@ -118,6 +119,7 @@
             validarProductos() {
                 this.lista = [];
                 this.cantProductos = 0;
+                this.productosList = '';
                 var _this = this;
                 if (this.productos.length > 0) {
                     $.each(this.productos, function (index, producto) {
@@ -147,10 +149,16 @@
                             var _this = this;
                             $.each(this.lista, function (index, producto) {
                                 _this.productosList += producto.id + '-' + producto.cantidad;
-                                if (index < _this.lista.length) _this.productosList += ",";
+                                if (index + 1 < _this.lista.length) _this.productosList += ",";
                             });
                             $.post(this.realizarPedidoURL, 'username=' + this.username + '&destino=' + this.destino + '&productos=' + this.productosList, function (response) {
-                                alert(response);
+                                if (response > 0) {
+                                    _this.mostrarNotificacion("Pedido realizado!", 3000);
+                                    _this.lista = [];
+                                    _this.$store.commit('setProductos', []);
+                                    _this.$storage.remove('carrito');
+                                    /*_this.closeModal("#listaPopup");*/
+                                } else _this.mostrarNotificacion("No se pudo realizar el pedido", 3000);
                             });
                         } else this.mostrarNotificacion("Debes ingresar un destino para tu pedido", 3000);
                     } else this.mostrarNotificacion("Debe haber al menos un producto seleccionado", 3000);
